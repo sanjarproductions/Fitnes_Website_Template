@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitweight</title>
+    <meta name="keywords" content=""/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="menu">
+            <span class="menu-global menu-top"></span>
+            <span class="menu-global menu-middle"></span>
+            <span class="menu-global menu-bottom"></span>
+        </div>
+        <div class="logo"></div>
+    </div>
+    <div class="p1" style="visibility: visible;">
+            <div class="b2">
+                <div class="main_photo"></div>
+                <div class="ic ic1"></div>
+                <div class="ic ic2"></div>
+                <div class="ic ic3"></div>
+                <div class="ic ic4"></div>
+            </div>
+            <div class="border"></div>
+    </div>
+    <div class="p2">
+      <div class="content">
+        <div class="t1">ABOUT PRODUCT?</div>
+        <div class="line"></div>
+        <div class="t2">Biologically active additives (BAA) are a combination of natural or nature-identical biologically active substances intended for direct intake with meals or addition to food to enrich the diet with individual nutrition and biologically active substances and their complexes.</div>
+      </div>
+    </div>
+    <div class="p3">
+      <video src="./img/2.mp4" controls></video>
+    </div>
+    <div class="p4">
+      <div class="content">
+        <div class="t1">WHAT IS FITWEIGHT?</div>
+        <div class="line"></div>
+        <div class="t2">Reduces appetite and cravings increase metabolism and energy remove fat permanently suitable for man and women vegeterian <br> capsules</div>
+      </div>
+    </div>
+    <div class="p5">
+      <div class="t1">FIT FOR LIFE</div>
+      <div class="line"></div>
+        <div class="box">
+          <div class="like">PERFECT BODY</div>
+          <div class="like">STAY FOCUSED</div>
+          <div class="like">INCREASED ENERGY</div>
+        </div>
+    </div>
+    <div class="p6">
+      <div class="content">
+        <div class="t1">SUPPLIMENT FACTS</div>
+        <div class="line"></div>
+        <div class="t2">Green coffee bean extract 50% chlorogenic acid, Garcinia cambogia fruit extract 50% HCA, Citrus Aurantium, Green tea leaf extract 98% polyphenols/50% EGCG, Gymnema sylvestre leaf extract 25% gymnemic acids</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+      <div class="t1">WANT TO <br>
+        CONTACT US?</div>
+        <div class="line_f"></div>
+        <div class="t2">Please, use the form below or send an email to info@fitweight.us:</div>
+        <div class="form">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea name="masseage" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <div class="btn">Submit</div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var Menu = {
+  
+  el: {
+    ham: $('.menu'),
+    menuTop: $('.menu-top'),
+    menuMiddle: $('.menu-middle'),
+    menuBottom: $('.menu-bottom')
+  },
+  
+  init: function() {
+    Menu.bindUIactions();
+  },
+  
+  bindUIactions: function() {
+    Menu.el.ham
+        .on(
+          'click',
+        function(event) {
+        Menu.activateMenu(event);
+        event.preventDefault();
+      }
+    );
+  },
+  
+  activateMenu: function() {
+    Menu.el.menuTop.toggleClass('menu-top-click');
+    Menu.el.menuMiddle.toggleClass('menu-middle-click');
+    Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
+  }
+};
+
+Menu.init();
+</script>
+
+</body>
+
+
+</html>
+

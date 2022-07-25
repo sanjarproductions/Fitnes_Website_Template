@@ -1,0 +1,410 @@
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+@import "compass/css3";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  color: #252934;
+}
+.container{
+    padding-top: 1px;
+}
+
+.line{
+  background: #1de78c;
+  background: -moz-linear-gradient(top, #1de78c 0%, #41ae85 100%);
+  background: -webkit-linear-gradient(top, #1de78c 0%,#41ae85 100%);
+  background: linear-gradient(to bottom, #1de78c 0%,#41ae85 100%);
+  width: 150px;
+  height: 2px;
+  margin: 1rem 0;
+  padding: 0;
+  margin: 0 AUTO;
+}
+.nav{
+    padding: 16px 36px;
+    position: fixed;
+    background: #31CEB8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 10000;
+}
+.nav .logo{
+    background: url(./img/fitweight.png) 50% 50% no-repeat;
+    margin: 0 auto;
+    width: 190px;
+    height: 50px;
+    background-size:contain;
+}
+.content{
+
+  max-width: 1400px;
+  margin: o auto;
+  overflow: hidden;
+}
+.menu {
+  cursor: pointer;
+  position: relative;
+  height: 22px;
+  width: 30px;
+}
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  border-top: 3px solid white;
+  width: 100%;
+  transition: 0.55s;
+  border-radius: 2px;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 8px;
+}
+.menu-bottom {
+  top: 16px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+
+
+.p1::before{
+    content: '';
+    position: fixed;
+    background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    -webkit-animation: stars-move-in 1000ms 300ms forwards;
+    animation: stars-move-in 1000ms 300ms forwards;
+}
+.p1{
+    background: #31CEB8;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+    padding-top: 1px;
+}
+.p1 .main_photo{
+  background: url(./img/upk.png) 50% 50% no-repeat;
+  background-size: 100%;
+  width: 270px;
+  height: 505px;
+  margin: 0 auto;
+  transition: 500ms;
+  margin-top: 36px;
+}
+.p1 .b2{
+    padding-top: 1px;
+    margin-top: 180px;
+    position: relative;
+}
+.ic{
+    height: 122px;
+    width: 110px;
+    position: absolute;
+    transition: 300ms;
+}
+.ic1{
+    background: url(./img/ic1.png) 50% 50% no-repeat;
+    background-size: 100%;
+    left: 210px;
+    top: 50px;
+}
+.ic2{
+  background: url(./img/ic2.png) 50% 50% no-repeat;
+  background-size: 100%;
+  right: 210px;
+  top: 50px;
+}
+.p1 .ic3{
+    background: url(./img/ic3.png) 50% 50% no-repeat;
+    background-size: 100%;
+    right: 210px;
+    top: 250px;
+}
+.ic4{
+    background: url(./img/usa.png) 50% 50% no-repeat;
+    background-size: 100%;
+    left: 210px;
+    top: 250px;
+}
+.border{
+    left: 0;
+    background-size: cover;
+    width: 100%;
+    opacity: 1;
+    border-bottom: 300px solid #31ceb8;
+}
+
+.p2{
+  top :-300px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  padding: 90px 50px 120px 50px;
+  background: #fafafa url(/img/woman.png) center right no-repeat;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+  clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 97%, 0 100%);
+}
+.p2 .t1, .p4 .t1, .p6 .t1{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.p2 .t2{
+  font-size: 1.4rem;
+  background: #ffffffaa;
+  padding-top: 20px;
+  margin: auto;
+}
+.p4 .t2{
+  font-size: 1.4rem;
+  background: #ffffffaa;
+  padding-top: 20px;
+  margin: auto;
+}
+.p3 video{
+  z-index: 5;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: -310px;
+}
+.p4 {
+  top: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  padding: 50px 0px 50px 0px;
+  background: #fafafa url(/img/woman.png) center right no-repeat;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+  clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 97%, 0 100%);
+  font-size: 1.4rem;
+}
+.p5, .p6{
+    text-align: center;
+    color: #000;
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    padding: 50px;
+}
+.p6{
+  padding-top: -2px;
+  margin-top: -85px;
+}
+.p5 .t1, .p6 .t1{
+    padding-top: 40px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.p5 .box{
+  width: 100%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.p5 .box .like{
+  background: url(./img/ok.png) 0px 50% no-repeat;
+  padding-left: 80px;
+  font-weight: bold;
+  width: 320px;
+  margin: 0 auto;
+  background-size: 80px 73px;
+  min-height: 90px;
+  line-height: 90px;
+  font-size: 22px;
+}
+.p6 .t2{
+  font-size: 24px;
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+
+.footer{
+  background: #31ceb8;
+  color: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 5rem 3rem;
+}
+.footer .content{
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  /* padding: 25vh 0; */
+  padding-bottom: 175px;
+}
+.footer .t1{
+  font-size: 3rem;
+  line-height: 2.4rem;
+  padding-bottom: 1.5rem;
+  padding-bottom: 24px;
+}
+.footer .line_f{
+  background: #1de78c;
+  background: -moz-linear-gradient(top, #1de78c 0%, #41ae85 100%);
+  background: -webkit-linear-gradient(top, #1de78c 0%,#41ae85 100%);
+  background: linear-gradient(to bottom, #1de78c 0%,#41ae85 100%);
+  width: 150px;
+  height: 2px;
+  margin: 1rem 0;
+  padding: 0;
+  
+}
+.footer .t2{
+  font-size: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-bottom: 24px;
+}
+.footer input,textarea{
+  color: #fff !important;
+  border: none;
+  padding: 16px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  width: 100%;
+  outline: none;
+  font-size: 1.8rem;
+}
+.footer textarea {
+  resize: none;
+  height: 100px;
+  color: white;
+  width: 100%;
+}
+.footer .btn{
+  background: #f300b4;
+  color: #fafafa;
+  margin-top: 1rem;
+  width: auto;
+  padding: 1rem;
+  float: right;
+  font-size: 10px;
+}
+::placeholder {
+  color: #FFF;
+}
+@media screen and (max-width: 849px){
+  .nav{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .nav .logo{
+    margin-top: 8px;
+    padding-bottom: 8px;
+  }
+  .p1 .b2{
+    border-bottom: 220px solid #31ceb8;
+  }
+  .p1 .main_photo{
+    width: 130px;
+    height: 247px;
+  }
+  .p1 .ic{
+    width: 70px;
+    height: 70px;
+  }
+  .p1 .ic1{
+    left: 10px;
+    top: 20px;
+  }
+  .p1 .ic2{
+    right: 10px;
+    top: 20px;
+  }
+  .p1 .ic3{
+    right: 10px;
+    top: 200px;
+  }
+  .p1 .ic4{
+    left: 10px;
+    top: 200px;
+  }
+  .p2, .p4{
+    -webkit-clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+    clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+    background-position: top left; 
+    background-size: cover;
+    background-image: none;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    padding-left: 0px;
+padding-right: 0px;
+}
+.p3 video{
+width: 320px;
+}
+.p5, .p6{
+padding-left:20px ;
+padding-right:20px ;
+}
+.p4 .t2{
+color: #252934;
+}
+.p5 .box .like{
+  font-size: 17px;
+  background-size: 40px 37px;
+  padding-left: 50px;
+  width: 100%;
+}
+.footer{
+  padding: 0px;
+}
+.footer .content {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 18vh 0;
+}
+.footer .t2{
+text-align: center;
+line-height: 1.9rem;
+padding-bottom: 34px;
+}
+.footer .btn{
+font-size: 12px;
+}
+.footer input,textarea{
+  color: #fff !important;
+  border: none;
+  padding:16px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  width: 100%;
+  outline: none;
+  font-size: 1.8rem;
+}
+}
